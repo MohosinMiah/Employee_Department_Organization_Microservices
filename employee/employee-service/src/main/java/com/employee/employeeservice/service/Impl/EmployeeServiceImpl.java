@@ -31,5 +31,16 @@ public class EmployeeServiceImpl implements EmployeeService{
 
         return employeeDto;
     }
+
+    @Override
+    public EmployeeDto findById(Long id) {
+        // Get employee by ID
+        Employee employee  = employeeRepository.findById(id).get();
+
+        // Map Employee entity to EmployeeDto
+        EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class);
+
+        return employeeDto;
+    }
     
 }
