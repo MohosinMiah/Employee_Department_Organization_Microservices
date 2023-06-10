@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.employee.employeeservice.dto.EmployeeDto;
+import com.employee.employeeservice.dto.EmployeeResponse;
 import com.employee.employeeservice.service.EmployeeService;
 
 @RestController
@@ -31,9 +32,9 @@ public class EmployeeController {
 
     // Build Get Employee By ID Rest API
     @GetMapping("{employee-id}")
-    public ResponseEntity<EmployeeDto> getEmployeeById(@PathVariable("employee-id") Long id )
+    public ResponseEntity<EmployeeResponse> getEmployeeById(@PathVariable("employee-id") Long id )
     {
-        EmployeeDto employee = employeeService.findById(id);
+        EmployeeResponse employee = employeeService.getEmployeeById(id);
 
         return new ResponseEntity<>(employee,HttpStatus.OK);
     }
