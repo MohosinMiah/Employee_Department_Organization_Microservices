@@ -11,10 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.department.departmentservice.dto.DepartmentDto;
-import com.department.departmentservice.entity.Department;
 import com.department.departmentservice.service.DepartmentService;
 
-import jakarta.websocket.server.PathParam;
 
 @RestController
 @RequestMapping("/api/departments")
