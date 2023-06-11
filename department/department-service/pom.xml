@@ -8,7 +8,7 @@
 		<version>3.0.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.javaguides</groupId>
+	<groupId>net.department</groupId>
 	<artifactId>department-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>department-service</name>
