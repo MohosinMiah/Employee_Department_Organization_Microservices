@@ -2,6 +2,10 @@
 
 ## About the project
 
+## API Resource
+```
+https://github.com/MohosinMiah/Employee_Department_Organization_Microservices/blob/main/necessary_resource/Microservices%20(Employee_Department).postman_collection.json
+```
 This project consists of three microservices: Employee, Department, and Organization. It showcases the implementation of various Spring Cloud features like API Gateway, Config Server, Service Registry, Zipkin for distributed tracing, and Circuit Breaker using Resilience4J.
 
 ## Microservices
